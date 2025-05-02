@@ -1,6 +1,6 @@
-.theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
+.theme-dark:not(html.custom-theme-background, :has(#clientThemeVars),.theme-darker,.theme-midnight) {
 	--autocomplete-bg: color-mix(in oklab, var(--primary-630) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
-	--channeltextarea-background: hsl(218, calc(var(--saturation-factor, 1) * 8%), 27%);
+	--chat-background-default: hsl(218, calc(var(--saturation-factor, 1) * 8%), 27%);
 	--header-primary: var(--white-500);
 	--header-secondary: #b9bbbe;
 	--channels-default: #ff00f2;
@@ -97,7 +97,7 @@
 }
 
 .theme-light:not(html.custom-theme-background, :has(#clientThemeVars)) {
-	--channeltextarea-background: #ebedef;
+	--chat-background-default: #ebedef;
 	--background-modifier-accent: #06060714;
 	--background-mentioned: hsla(38, calc(var(--saturation-factor, 1) * 96%), 54%, 0.1);
 	--background-mentioned-hover: hsla(38, calc(var(--saturation-factor, 1) * 96%), 54%, 0.2);
@@ -229,6 +229,14 @@ body {
 	--crunchyroll-dark: hsl(29, calc(var(--saturation-factor, 1) * 93%), 55%);
 	--crunchyroll: hsl(29, calc(var(--saturation-factor, 1) * 93%), 60%);
 	--text-link: color-mix(in oklab, var(--blue-345) 100%, var(--theme-text-color, #000) var(--theme-text-color-amount, 0%));
+	--text-warning: #faa61a;
+	--notice-background-warning: #f26522;
+	--notice-text-warning: #fff;
+	--notice-background-critical: #f23f42;
+	--notice-text-critical: #fff;
+	--background-surface-high: var(--background-secondary);
+	--bg-base-secondary: var(--background-secondary);
+	--bg-base-tertiary: var(--background-tertiary);
     --reaction-background: hsla(234.935 calc(var(--saturation-factor, 1) * 85.556%) 64.706% /.15);
 }
 
